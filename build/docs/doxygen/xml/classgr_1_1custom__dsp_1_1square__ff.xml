@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1custom__dsp_1_1square__ff" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::custom_dsp::square_ff</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1custom__dsp_1_1square__ff__impl" prot="public" virt="non-virtual">gr::custom_dsp::square_ff_impl</derivedcompoundref>
+    <includes refid="square__ff_8h" local="no">square_ff.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1custom__dsp_1_1square__ff_1a4effbbb6952f39677eb3f0d26e39f225" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1custom__dsp_1_1square__ff" kindref="compound">square_ff</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;square_ff&gt; gr::custom_dsp::square_ff::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/square_ff.h" line="38" column="1" bodyfile="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/square_ff.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1square__ff_1aa37d4215512c8ba1f5f1b868ca370f97" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1custom__dsp_1_1square__ff_1a4effbbb6952f39677eb3f0d26e39f225" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::custom_dsp::square_ff::make</definition>
+        <argsstring>(float scale)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1custom__dsp_1_1square__ff" kindref="compound">custom_dsp::square_ff</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1custom__dsp_1_1square__ff" kindref="compound">custom_dsp::square_ff</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1custom__dsp_1_1square__ff_1aa37d4215512c8ba1f5f1b868ca370f97" kindref="member">custom_dsp::square_ff::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/square_ff.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1square__ff_1ad39ef9f3b22512666fbc73f54d9ab4e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::custom_dsp::square_ff::set_scale</definition>
+        <argsstring>(float scale)=0</argsstring>
+        <name>set_scale</name>
+        <reimplementedby refid="classgr_1_1custom__dsp_1_1square__ff__impl_1aef7602f9f58e3ad383d7c45a4069f8e7">set_scale</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/square_ff.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1square__ff_1a1711feec2315144706aec45953b00b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::square_ff::get_scale</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_scale</name>
+        <reimplementedby refid="classgr_1_1custom__dsp_1_1square__ff__impl_1ae02e9e5ba1d551d67ae240a793ddfcc4">get_scale</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/square_ff.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>gr::custom_dsp::square_ff_impl</label>
+        <link refid="classgr_1_1custom__dsp_1_1square__ff__impl"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gr::block</label>
+      </node>
+      <node id="15">
+        <label>gr::custom_dsp::square_ff</label>
+        <link refid="classgr_1_1custom__dsp_1_1square__ff"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>gr::block</label>
+      </node>
+      <node id="18">
+        <label>gr::custom_dsp::square_ff</label>
+        <link refid="classgr_1_1custom__dsp_1_1square__ff"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/square_ff.h" line="36" column="1" bodyfile="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/square_ff.h" bodystart="35" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1custom__dsp_1_1square__ff_1a1711feec2315144706aec45953b00b4f" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::square_ff</scope><name>get_scale</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1square__ff_1aa37d4215512c8ba1f5f1b868ca370f97" prot="public" virt="non-virtual"><scope>gr::custom_dsp::square_ff</scope><name>make</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1square__ff_1ad39ef9f3b22512666fbc73f54d9ab4e7" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::square_ff</scope><name>set_scale</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1square__ff_1a4effbbb6952f39677eb3f0d26e39f225" prot="public" virt="non-virtual"><scope>gr::custom_dsp::square_ff</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

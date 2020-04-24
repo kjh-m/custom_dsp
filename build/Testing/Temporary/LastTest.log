@@ -1,0 +1,63 @@
+Start testing: Apr 23 15:59 EEST
+----------------------------------------------------------
+1/3 Testing: qa_pll_2nd_order_allout
+1/3 Test: qa_pll_2nd_order_allout
+Command: "/bin/sh" "/home/mikes/gnuradio/gr-custom_dsp/build/python/qa_pll_2nd_order_allout_test.sh"
+Directory: /home/mikes/gnuradio/gr-custom_dsp/build/python
+"qa_pll_2nd_order_allout" start time: Apr 23 15:59 EEST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+<end of output>
+Test time =   0.35 sec
+----------------------------------------------------------
+Test Passed.
+"qa_pll_2nd_order_allout" end time: Apr 23 15:59 EEST
+"qa_pll_2nd_order_allout" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: qa_square_ff
+2/3 Test: qa_square_ff
+Command: "/bin/sh" "/home/mikes/gnuradio/gr-custom_dsp/build/python/qa_square_ff_test.sh"
+Directory: /home/mikes/gnuradio/gr-custom_dsp/build/python
+"qa_square_ff" start time: Apr 23 15:59 EEST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+<end of output>
+Test time =   0.35 sec
+----------------------------------------------------------
+Test Passed.
+"qa_square_ff" end time: Apr 23 15:59 EEST
+"qa_square_ff" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: qa_freq_counter_v1
+3/3 Test: qa_freq_counter_v1
+Command: "/bin/sh" "/home/mikes/gnuradio/gr-custom_dsp/build/python/qa_freq_counter_v1_test.sh"
+Directory: /home/mikes/gnuradio/gr-custom_dsp/build/python
+"qa_freq_counter_v1" start time: Apr 23 15:59 EEST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+<end of output>
+Test time =   0.33 sec
+----------------------------------------------------------
+Test Passed.
+"qa_freq_counter_v1" end time: Apr 23 15:59 EEST
+"qa_freq_counter_v1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 23 15:59 EEST

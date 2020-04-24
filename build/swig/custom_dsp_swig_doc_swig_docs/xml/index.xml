@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout" kind="class"><name>gr::custom_dsp::pll_2nd_order_allout</name>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a8e1ff1a94afcedaee8dd94ac32df127e" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ad6df86ebe885c1255b022b3f0cae9f88" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a652a5505f754958fb5f55ea16142388b" kind="function"><name>lock_detector</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a0e669955cb712240aa06d0c77c08cb97" kind="function"><name>set_lock_threshold</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a0351ba4c9d70d5add8d5d822a5d1c661" kind="function"><name>set_loop_bandwidth</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ab235da558242c2f7f52f9d995d285de7" kind="function"><name>set_damping_factor</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a321c13db698d67ca3ba53add36d8a63b" kind="function"><name>set_alpha</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac45fe56b82aa244a912f7868c29a1b1f" kind="function"><name>set_beta</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a6be6aa6e7a57b00b59fcc5cc3d14cf18" kind="function"><name>set_frequency</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac40b05463474d05d70dd6c3cf41ff55f" kind="function"><name>set_phase</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac7da657020b257ee08afbafd56cbd686" kind="function"><name>set_min_freq</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a3ddec7698fc9f6266b4ad1d1f992af17" kind="function"><name>set_max_freq</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ab080a40fd8d3eb57f13c26735c8b1acb" kind="function"><name>get_loop_bandwidth</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a4c3479e05dd4af246a35a6f82321921b" kind="function"><name>get_damping_factor</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac853a3ae7d7edc163792de4eae8a5ab7" kind="function"><name>get_alpha</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a609a087630c05b4c5a40f2cfcb8180a9" kind="function"><name>get_beta</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a463afbad595bab0fdb63d616bd9b1ed8" kind="function"><name>get_frequency</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a4a151eda13a148214c292033ea1bb22b" kind="function"><name>get_phase</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1aa4efbfa67e27ab56cdd9303e76cc82b1" kind="function"><name>get_min_freq</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1af590759c9c0ef38fd4d9a4b01ef1e24f" kind="function"><name>get_max_freq</name></member>
+  </compound>
+  <compound refid="classgr_1_1custom__dsp_1_1square__ff" kind="class"><name>gr::custom_dsp::square_ff</name>
+    <member refid="classgr_1_1custom__dsp_1_1square__ff_1a4effbbb6952f39677eb3f0d26e39f225" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1square__ff_1aa37d4215512c8ba1f5f1b868ca370f97" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1square__ff_1ad39ef9f3b22512666fbc73f54d9ab4e7" kind="function"><name>set_scale</name></member>
+    <member refid="classgr_1_1custom__dsp_1_1square__ff_1a1711feec2315144706aec45953b00b4f" kind="function"><name>get_scale</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1custom__dsp" kind="namespace"><name>gr::custom_dsp</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a8a0e1e5b840b9a8478b7e5f366c7b11e" kind="define"><name>CUSTOM_DSP_API</name></member>
+  </compound>
+  <compound refid="pll__2nd__order__allout_8h" kind="file"><name>pll_2nd_order_allout.h</name>
+  </compound>
+  <compound refid="square__ff_8h" kind="file"><name>square_ff.h</name>
+  </compound>
+  <compound refid="dir_d4c0866198214ac24cd93ff285b988fc" kind="dir"><name>custom_dsp</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+</doxygenindex>

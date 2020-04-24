@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::custom_dsp::pll_2nd_order_allout</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <basecompoundref prot="public" virt="virtual">control_loop</basecompoundref>
+    <includes refid="pll__2nd__order__allout_8h" local="no">pll_2nd_order_allout.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a8e1ff1a94afcedaee8dd94ac32df127e" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout" kindref="compound">pll_2nd_order_allout</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;pll_2nd_order_allout&gt; gr::custom_dsp::pll_2nd_order_allout::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="42" column="1" bodyfile="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ad6df86ebe885c1255b022b3f0cae9f88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a8e1ff1a94afcedaee8dd94ac32df127e" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::custom_dsp::pll_2nd_order_allout::make</definition>
+        <argsstring>(float w, float max_freq, float min_freq, float damp_c, short gain_set, float alpha, float beta, float lock_thr)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>damp_c</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>gain_set</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lock_thr</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout" kindref="compound">custom_dsp::pll_2nd_order_allout</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout" kindref="compound">custom_dsp::pll_2nd_order_allout</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ad6df86ebe885c1255b022b3f0cae9f88" kindref="member">custom_dsp::pll_2nd_order_allout::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a652a5505f754958fb5f55ea16142388b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::custom_dsp::pll_2nd_order_allout::lock_detector</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>lock_detector</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a0e669955cb712240aa06d0c77c08cb97" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::pll_2nd_order_allout::set_lock_threshold</definition>
+        <argsstring>(float)=0</argsstring>
+        <name>set_lock_threshold</name>
+        <param>
+          <type>float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a0351ba4c9d70d5add8d5d822a5d1c661" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::custom_dsp::pll_2nd_order_allout::set_loop_bandwidth</definition>
+        <argsstring>(float bw)=0</argsstring>
+        <name>set_loop_bandwidth</name>
+        <param>
+          <type>float</type>
+          <declname>bw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ab235da558242c2f7f52f9d995d285de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::custom_dsp::pll_2nd_order_allout::set_damping_factor</definition>
+        <argsstring>(float df)=0</argsstring>
+        <name>set_damping_factor</name>
+        <param>
+          <type>float</type>
+          <declname>df</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a321c13db698d67ca3ba53add36d8a63b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::custom_dsp::pll_2nd_order_allout::set_alpha</definition>
+        <argsstring>(float alpha)=0</argsstring>
+        <name>set_alpha</name>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac45fe56b82aa244a912f7868c29a1b1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::custom_dsp::pll_2nd_order_allout::set_beta</definition>
+        <argsstring>(float beta)=0</argsstring>
+        <name>set_beta</name>
+        <param>
+          <type>float</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a6be6aa6e7a57b00b59fcc5cc3d14cf18" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::custom_dsp::pll_2nd_order_allout::set_frequency</definition>
+        <argsstring>(float freq)=0</argsstring>
+        <name>set_frequency</name>
+        <param>
+          <type>float</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac40b05463474d05d70dd6c3cf41ff55f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::custom_dsp::pll_2nd_order_allout::set_phase</definition>
+        <argsstring>(float phase)=0</argsstring>
+        <name>set_phase</name>
+        <param>
+          <type>float</type>
+          <declname>phase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac7da657020b257ee08afbafd56cbd686" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::custom_dsp::pll_2nd_order_allout::set_min_freq</definition>
+        <argsstring>(float freq)=0</argsstring>
+        <name>set_min_freq</name>
+        <param>
+          <type>float</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a3ddec7698fc9f6266b4ad1d1f992af17" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::custom_dsp::pll_2nd_order_allout::set_max_freq</definition>
+        <argsstring>(float freq)=0</argsstring>
+        <name>set_max_freq</name>
+        <param>
+          <type>float</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ab080a40fd8d3eb57f13c26735c8b1acb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::pll_2nd_order_allout::get_loop_bandwidth</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_loop_bandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a4c3479e05dd4af246a35a6f82321921b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::pll_2nd_order_allout::get_damping_factor</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_damping_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac853a3ae7d7edc163792de4eae8a5ab7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::pll_2nd_order_allout::get_alpha</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a609a087630c05b4c5a40f2cfcb8180a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::pll_2nd_order_allout::get_beta</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a463afbad595bab0fdb63d616bd9b1ed8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::pll_2nd_order_allout::get_frequency</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a4a151eda13a148214c292033ea1bb22b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::pll_2nd_order_allout::get_phase</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_phase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1aa4efbfa67e27ab56cdd9303e76cc82b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::pll_2nd_order_allout::get_min_freq</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_min_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1af590759c9c0ef38fd4d9a4b01ef1e24f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::custom_dsp::pll_2nd_order_allout::get_max_freq</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_max_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="73" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>gr::custom_dsp::pll_2nd_order_allout</label>
+        <link refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="2">
+        <label>blocks::control_loop</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>gr::custom_dsp::pll_2nd_order_allout</label>
+        <link refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="5">
+        <label>blocks::control_loop</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" line="40" column="1" bodyfile="/home/mikes/gnuradio/gr-custom_dsp/include/custom_dsp/pll_2nd_order_allout.h" bodystart="38" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac853a3ae7d7edc163792de4eae8a5ab7" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>get_alpha</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a609a087630c05b4c5a40f2cfcb8180a9" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>get_beta</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a4c3479e05dd4af246a35a6f82321921b" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>get_damping_factor</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a463afbad595bab0fdb63d616bd9b1ed8" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>get_frequency</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ab080a40fd8d3eb57f13c26735c8b1acb" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>get_loop_bandwidth</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1af590759c9c0ef38fd4d9a4b01ef1e24f" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>get_max_freq</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1aa4efbfa67e27ab56cdd9303e76cc82b1" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>get_min_freq</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a4a151eda13a148214c292033ea1bb22b" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>get_phase</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a652a5505f754958fb5f55ea16142388b" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>lock_detector</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ad6df86ebe885c1255b022b3f0cae9f88" prot="public" virt="non-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>make</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a321c13db698d67ca3ba53add36d8a63b" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>set_alpha</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac45fe56b82aa244a912f7868c29a1b1f" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>set_beta</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ab235da558242c2f7f52f9d995d285de7" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>set_damping_factor</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a6be6aa6e7a57b00b59fcc5cc3d14cf18" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>set_frequency</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a0e669955cb712240aa06d0c77c08cb97" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>set_lock_threshold</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a0351ba4c9d70d5add8d5d822a5d1c661" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>set_loop_bandwidth</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a3ddec7698fc9f6266b4ad1d1f992af17" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>set_max_freq</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac7da657020b257ee08afbafd56cbd686" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>set_min_freq</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1ac40b05463474d05d70dd6c3cf41ff55f" prot="public" virt="pure-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>set_phase</name></member>
+      <member refid="classgr_1_1custom__dsp_1_1pll__2nd__order__allout_1a8e1ff1a94afcedaee8dd94ac32df127e" prot="public" virt="non-virtual"><scope>gr::custom_dsp::pll_2nd_order_allout</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

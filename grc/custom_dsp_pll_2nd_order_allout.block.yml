@@ -1,0 +1,89 @@
+id: custom_dsp_pll_2nd_order_allout
+label: pll_2nd_order_allout
+category: '[custom_dsp]'
+flags: [ python, cpp ]
+
+templates:
+  imports: import custom_dsp
+  make: custom_dsp.pll_2nd_order_allout(${w}, ${max_freq}, ${min_freq}, ${damp_c}, ${gain_set}, ${alpha}, ${beta}, ${lock_thr})
+  callbacks:
+    - set_loop_bandwidth(${w})
+    - set_max_freq(${max_freq})
+    - set_min_freq(${min_freq})
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \$keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+- id: w
+  label: Loop bandwidth
+  dtype: float
+  hide: ${ ('all' if gain_set == 1 else 'none') }
+- id: min_freq
+  label: Min Freq
+  dtype: float
+- id: max_freq
+  label: Max Freq
+  dtype: float
+- id: damp_c
+  label: Damping coefficient
+  dtype: float
+  hide: ${ ('all' if gain_set == 1 else 'none') }
+- id: gain_set
+  label: Gain setting by
+  dtype: enum
+  options: [0, 1]
+  option_labels:
+    ['Loop BW and damping', 'alpha and beta']
+  #option_attributes:
+  #        val: [0, 1]
+  default: 0
+- id: alpha
+  label: alpha
+  dtype: float
+  hide: ${ ('all' if gain_set == 0 else 'none') }
+- id: beta
+  label: beta
+  dtype: float
+  hide: ${ ('all' if gain_set == 0 else 'none') }
+- id: lock_thr
+  label: Locking threshold
+  dtype: float
+
+#  Make one 'inputs' list entry per input and one 'outputs' list entry per output.
+#  Keys include:
+#      * label (an identifier for the GUI)
+#      * domain (optional - stream or message. Default is stream)
+#      * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+#      * vlen (optional - data stream vector length. Default is 1)
+#      * optional (optional - set to 1 for optional inputs. Default is 0)
+inputs:
+- label: in
+  dtype: complex
+
+outputs:
+- label: refout
+  dtype: complex
+- label: carrier
+  dtype: complex
+  optional: 1
+- label: error
+  dtype: float
+  optional: 1
+- label: lock
+  dtype: short
+  optional: 1
+
+cpp_templates:
+    includes: ['#include <custom_dsp/pll_2nd_order_allout.h>']
+    make: 'this->${id} = custom_dsp::pll_2nd_order_allout::make(${w}, ${max_freq}, ${min_freq}, ${damp_c}, ${gain_set}, ${alpha}, ${beta}, ${lock_thr});'
+    callbacks:
+    - set_loop_bandwidth(${w})
+    - set_max_freq(${max_freq}) 
+    - set_min_freq(${min_freq})
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1

@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/mikes/gnuradio/gr-custom_dsp/build/lib",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dgnuradio_custom_dsp_EXPORTS -I/home/mikes/gnuradio/gr-custom_dsp/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-custom_dsp.dir/pll_2nd_order_allout_impl.cc.o -c /home/mikes/gnuradio/gr-custom_dsp/lib/pll_2nd_order_allout_impl.cc",
+  "file": "/home/mikes/gnuradio/gr-custom_dsp/lib/pll_2nd_order_allout_impl.cc"
+},
+{
+  "directory": "/home/mikes/gnuradio/gr-custom_dsp/build/lib",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dgnuradio_custom_dsp_EXPORTS -I/home/mikes/gnuradio/gr-custom_dsp/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-custom_dsp.dir/square_ff_impl.cc.o -c /home/mikes/gnuradio/gr-custom_dsp/lib/square_ff_impl.cc",
+  "file": "/home/mikes/gnuradio/gr-custom_dsp/lib/square_ff_impl.cc"
+},
+{
+  "directory": "/home/mikes/gnuradio/gr-custom_dsp/build/swig",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/_custom_dsp_swig_doc_tag.dir/_custom_dsp_swig_doc_tag.cpp.o -c /home/mikes/gnuradio/gr-custom_dsp/build/swig/_custom_dsp_swig_doc_tag.cpp",
+  "file": "/home/mikes/gnuradio/gr-custom_dsp/build/swig/_custom_dsp_swig_doc_tag.cpp"
+},
+{
+  "directory": "/home/mikes/gnuradio/gr-custom_dsp/build/swig",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dcustom_dsp_swig_EXPORTS -I/home/mikes/gnuradio/gr-custom_dsp/build/swig -I/home/mikes/gnuradio/gr-custom_dsp/swig -I/usr/include/gnuradio/swig -isystem /usr/include/python3.6m -I/home/mikes/gnuradio/gr-custom_dsp/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/custom_dsp_swig.dir/CMakeFiles/custom_dsp_swig.dir/custom_dsp_swigPYTHON_wrap.cxx.o -c /home/mikes/gnuradio/gr-custom_dsp/build/swig/CMakeFiles/custom_dsp_swig.dir/custom_dsp_swigPYTHON_wrap.cxx",
+  "file": "/home/mikes/gnuradio/gr-custom_dsp/build/swig/CMakeFiles/custom_dsp_swig.dir/custom_dsp_swigPYTHON_wrap.cxx"
+}
+]

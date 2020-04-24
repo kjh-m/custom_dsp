@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mikes/gnuradio/gr-custom_dsp/swig/custom_dsp_swig.i
+gnuradio.i
+/home/mikes/gnuradio/gr-custom_dsp/swig/gnuradio.i
+custom_dsp_swig_doc.i
+/home/mikes/gnuradio/gr-custom_dsp/swig/custom_dsp_swig_doc.i
+custom_dsp/pll_2nd_order_allout.h
+/home/mikes/gnuradio/gr-custom_dsp/swig/custom_dsp/pll_2nd_order_allout.h
+custom_dsp/square_ff.h
+/home/mikes/gnuradio/gr-custom_dsp/swig/custom_dsp/square_ff.h
+custom_dsp/pll_2nd_order_allout.h
+/home/mikes/gnuradio/gr-custom_dsp/swig/custom_dsp/pll_2nd_order_allout.h
+custom_dsp/square_ff.h
+/home/mikes/gnuradio/gr-custom_dsp/swig/custom_dsp/square_ff.h
+
